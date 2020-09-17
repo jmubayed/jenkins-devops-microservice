@@ -52,7 +52,7 @@ pipeline {
 		}
 		stage('Test') {
 			steps {
-				sh "mvn clean compile"
+				sh "mvn test"
 			}
 		}		
 		stage('Integration Test') {
